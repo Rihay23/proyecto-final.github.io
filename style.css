@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
