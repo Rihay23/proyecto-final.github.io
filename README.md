@@ -3,7 +3,7 @@
 Este es mi proyecto final del curso de HTML, donde demuestro el uso de etiquetas semánticas y estructura web básica.
 
 ## 🌐 Vista en vivo
-**URL del proyecto:** [https://tu-usuario.github.io/portfolio-yahir/](https://rihay23.github.io/proyecto-final.github.io/)
+**URL del proyecto:** [Ingrese aqui :)](https://rihay23.github.io/proyecto-final.github.io/)
 
 ## 📋 Contenido del Portafolio
 - Información personal y académica
