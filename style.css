@@ -707,3 +707,146 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(74, 0, 224, 0.4);
 }
+
+/* MEDIA QUERIES */
+
+/* =========================
+   RESPONSIVE: Tablet
+   (hasta 1024px)
+========================= */
+@media screen and (max-width: 1024px) {
+    .hero-texto h2 {
+        font-size: 32px;
+    }
+    
+    .seccion-titulo {
+        font-size: 32px;
+    }
+    
+    .proyecto-tarjeta {
+        flex: 1 1 280px;
+    }
+}
+
+/* =========================
+   RESPONSIVE: Tablet pequeña
+   (hasta 768px)
+========================= */
+@media screen and (max-width: 768px) {
+    .top-banner {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    
+    .nav-principal {
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-lista {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-texto h2 {
+        font-size: 28px;
+    }
+    
+    .seccion-contenedor {
+        padding: 40px 15px;
+    }
+    
+    .seccion-titulo {
+        font-size: 28px;
+    }
+    
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contacto-contenedor {
+        flex-direction: column;
+    }
+    
+    .boton-flotante,
+    .boton-volver {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .boton-volver {
+        left: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+/* =========================
+   RESPONSIVE: Celular
+   (hasta 480px)
+========================= */
+@media screen and (max-width: 480px) {
+    .top-banner {
+        font-size: 11px;
+    }
+    
+    .nav-principal {
+        padding: 10px;
+    }
+    
+    .nav-lista a {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .hero-texto h2 {
+        font-size: 24px;
+    }
+    
+    .hero-texto p {
+        font-size: 16px;
+    }
+    
+    .seccion-titulo {
+        font-size: 24px;
+    }
+    
+    .proyectos-contenedor {
+        gap: 20px;
+    }
+    
+    .proyecto-tarjeta {
+        flex: 1 1 100%;
+    }
+    
+    .hobbie-destacado {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .footer-contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
