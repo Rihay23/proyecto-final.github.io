@@ -297,23 +297,31 @@ body {
 }
 
 .proyecto-badge.destacado {
-    background-color: #ff9800;
+    background-color: #4a00e0;
 }
 
 .proyecto-imagen {
     height: 200px;
     overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 100%); 
 }
 
 .proyecto-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    transition: all 0.5s ease;
 }
 
 .proyecto-tarjeta:hover .proyecto-imagen img {
-    transform: scale(1.1);
+    transform: translate(-50%, -50%) scale(1.08);
 }
 
 .proyecto-titulo {
@@ -457,13 +465,13 @@ body {
     min-width: 300px;
     border-radius: 15px;
     overflow: hidden;
+    background-color: #000;
 }
 
 .hobbie-img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
+    object-fit: contain; 
     transition: transform 0.5s ease;
 }
 
