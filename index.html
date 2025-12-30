@@ -3,118 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Yahir Estrada | Desarrollador</title>
+    <title>Portafolio de Yahir Estrada | Desarrollador de Software</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
 </head>
 <body>
-    <!-- Header con nombre y título -->
-    <header>
-        <h1>Yahir Estrada</h1>
-        <h2>Desarrollador de Software Multiplataforma</h2>
-        <p>Estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital (TSU)</p>
-    </header>
+    <!-- Banner superior -->
+    <div class="top-banner">
+        <p>🚀 Desarrollador apasionado | Disponible para proyectos freelance</p>
+    </div>
 
-    <!-- Navegación simple -->
-    <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Mis Proyectos</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+    <!-- Header con nombre y título -->
+    <header class="header-principal">
+        <nav class="nav-principal">
+            <div class="logo-container">
+                <h1 class="logo">Yahir Estrada</h1>
+                <p class="tagline">Desarrollador Full Stack en Formación</p>
+            </div>
+            
+            <ul class="nav-lista">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-texto">
+                <h2>Transformando ideas en <span class="highlight">soluciones digitales</span></h2>
+                <p>Estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital. Apasionado por el desarrollo tanto backend como frontend.</p>
+                <a href="#proyectos" class="hero-btn">Ver Mis Proyectos</a>
+            </div>
+            <div class="hero-imagen">
+                <img src="https://www.northware.mx/wp-content/uploads/2025/02/Desarrollo-de-Software-a-la-Medida-Gran-Oportunidad-para-la-Transformacion-Digital.jpg" alt="Desarrollador trabajando" class="hero-img">
+            </div>
+        </div>
+    </header>
 
     <!-- Contenido principal -->
     <main>
         <!-- Sección Sobre Mí -->
-        <section id="sobre-mi">
-            <h3>Sobre Mí</h3>
-            <img src="https://www.northware.mx/wp-content/uploads/2025/02/Desarrollo-de-Software-a-la-Medida-Gran-Oportunidad-para-la-Transformacion-Digital.jpg" alt="Desarrollador trabajando" width="300">
-            <p>Soy estudiante de <strong>Desarrollo de Software Multiplataforma</strong> apasionado por la programación. Disfruto tanto del <strong>backend</strong> como del <strong>frontend</strong>, aunque me fascina más la parte visual y de interacción.</p>
-            <p>Actualmente me encuentro desarrollando mi lógica de programación y mejorando mis habilidades día a día.</p>
+        <section id="sobre-mi" class="seccion-contenedor">
+            <h2 class="seccion-titulo">Sobre Mí</h2>
+            <div class="sobre-mi-contenido">
+                <div class="sobre-mi-texto">
+                    <p>Soy estudiante de <strong>Desarrollo de Software Multiplataforma</strong> con una gran pasión por la programación. Disfruto tanto del <strong>backend</strong> como del <strong>frontend</strong>, aunque me fascina más la parte visual y de interacción.</p>
+                    <p>Actualmente me encuentro desarrollando mi lógica de programación y mejorando mis habilidades día a día. Busco oportunidades para aplicar mis conocimientos en proyectos reales y seguir aprendiendo de profesionales en el área.</p>
+                    <p>Mi objetivo es convertirme en un desarrollador full stack capaz de crear aplicaciones completas, escalables y que brinden una excelente experiencia de usuario.</p>
+                </div>
+                <div class="sobre-mi-estadisticas">
+                    <div class="estadistica">
+                        <span class="numero">3+</span>
+                        <span class="texto">Proyectos Completados</span>
+                    </div>
+                    <div class="estadistica">
+                        <span class="numero">2</span>
+                        <span class="texto">Lenguajes Dominados</span>
+                    </div>
+                    <div class="estadistica">
+                        <span class="numero">100%</span>
+                        <span class="texto">Compromiso</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Sección Proyectos -->
-        <section id="proyectos">
-            <h3>Mis Proyectos</h3>
+        <section id="proyectos" class="seccion-contenedor fondo-seccion">
+            <h2 class="seccion-titulo">Mis Proyectos</h2>
+            <p class="seccion-descripcion">Aquí puedes ver algunos de los proyectos en los que he trabajado durante mi formación.</p>
             
-            <article>
-                <h4>1. Sistema de Vinculación Universitaria</h4>
-                <p><strong>Tecnología:</strong> Java (Escritorio)</p>
-                <p>Mi primer proyecto: un sistema básico para la gestión de vinculación en mi universidad.</p>
-            </article>
+            <div class="proyectos-contenedor">
+                <!-- Proyecto 1 -->
+                <article class="proyecto-tarjeta">
+                    <div class="proyecto-badge">Java</div>
+                    <div class="proyecto-imagen">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Código Java">
+                    </div>
+                    <h3 class="proyecto-titulo">Sistema de Vinculación Universitaria</h3>
+                    <p class="proyecto-desc">Mi primer proyecto: un sistema básico para la gestión de vinculación en mi universidad. Desarrollado completamente en Java para escritorio.</p>
+                    <div class="proyecto-tecnologias">
+                        <span class="tecnologia">Java</span>
+                        <span class="tecnologia">MySQL</span>
+                    </div>
+                </article>
 
-            <article>
-                <h4>2. App Web de Gestión de Gimnasios</h4>
-                <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Base de datos</p>
-                <p>Aplicación web con múltiples roles: Admin, Nutriólogo, Entrenador y Cliente.</p>
-                <p><em>Actualmente en desarrollo</em></p>
-            </article>
+                <!-- Proyecto 2 -->
+                <article class="proyecto-tarjeta">
+                    <div class="proyecto-badge destacado">PHP</div>
+                    <div class="proyecto-imagen">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Gestión de Gimnasios">
+                    </div>
+                    <h3 class="proyecto-titulo">App Web de Gestión de Gimnasios</h3>
+                    <p class="proyecto-desc">Aplicación web con múltiples roles: Admin, Nutriólogo, Entrenador y Cliente. Incluye funcionalidades completas de gestión.</p>
+                    <div class="proyecto-tecnologias">
+                        <span class="tecnologia">HTML/CSS</span>
+                        <span class="tecnologia">JavaScript</span>
+                        <span class="tecnologia">Tailwind CSS</span>
+                        <span class="tecnologia">MySQL</span>
+                    </div>
+                </article>
 
-            <article>
-                <h4>3. Portafolio de Estructuras de Datos</h4>
-                <p><strong>Lenguajes:</strong> Java, C++, JavaScript</p>
-                <p>Colección de ejercicios y algoritmos implementados en diferentes lenguajes.</p>
-            </article>
+                <!-- Proyecto 3 -->
+                <article class="proyecto-tarjeta">
+                    <div class="proyecto-badge">Portafolio</div>
+                    <div class="proyecto-imagen">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Estructuras de Datos">
+                    </div>
+                    <h3 class="proyecto-titulo">Portafolio de Estructuras de Datos</h3>
+                    <p class="proyecto-desc">Colección de ejercicios y algoritmos implementados en diferentes lenguajes. Incluye estructuras como listas, pilas, colas y árboles.</p>
+                    <div class="proyecto-tecnologias">
+                        <span class="tecnologia">Java</span>
+                        <span class="tecnologia">C++</span>
+                        <span class="tecnologia">JavaScript</span>
+                        <span class="tecnologia">Tailwind CSS</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 - Nuevo -->
+                <article class="proyecto-tarjeta">
+                    <div class="proyecto-badge">HTML/CSS</div>
+                    <div class="proyecto-imagen">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2297/2297781.png" alt="Portafolio Web">
+                    </div>
+                    <h3 class="proyecto-titulo">Portafolio Web Responsivo</h3>
+                    <p class="proyecto-desc">Este mismo portafolio desarrollado con HTML5 semántico y CSS3 avanzado. Totalmente responsivo y optimizado para todos los dispositivos.</p>
+                    <div class="proyecto-tecnologias">
+                        <span class="tecnologia">HTML5</span>
+                        <span class="tecnologia">CSS3</span>
+                        <span class="tecnologia">Flexbox</span>
+                        <span class="tecnologia">Responsive</span>
+                    </div>
+                </article>
+            </div>
         </section>
-        
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="seccion-contenedor">
+            <h2 class="seccion-titulo">Habilidades Técnicas</h2>
+            <p class="seccion-descripcion">Tecnologías y herramientas que utilizo en mis proyectos.</p>
+            
+            <div class="habilidades-contenedor">
+                <div class="habilidad-categoria">
+                    <h3>Frontend</h3>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">HTML5</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 90%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">80%</span>
+                    </div>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">CSS3</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 85%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">65%</span>
+                    </div>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">JavaScript</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 70%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">50%</span>
+                    </div>
+                </div>
+                
+                <div class="habilidad-categoria">
+                    <h3>Backend</h3>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">Java</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 80%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">70%</span>
+                    </div>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">C++</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 75%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">50%</span>
+                    </div>
+                </div>
+                
+                <div class="habilidad-categoria">
+                    <h3>Herramientas</h3>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">Git</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 85%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">85%</span>
+                    </div>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">MySQL</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 75%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">75%</span>
+                    </div>
+                    <div class="habilidad">
+                        <span class="habilidad-nombre">VS Code</span>
+                        <div class="habilidad-bar">
+                            <div class="habilidad-progreso" style="width: 90%"></div>
+                        </div>
+                        <span class="habilidad-porcentaje">90%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Sección Hobbies -->
-        <section id="hobbies">
-            <h3>Mis Hobbies</h3>
-            <ul>
-                <li>Ver películas y series</li>
-                <li>Anime Isekai (¡Mis favoritos!)</li>
-                <li>Programar proyectos personales</li>
-                <li>Videojuegos ocasionales</li>
-            </ul>
-            <p>Me encantan los animes del género <strong>isekai</strong> donde los personajes son transportados a otros mundos.</p>
-            <img src="https://m.media-amazon.com/images/M/MV5BY2MzZGVhZTgtNWZlYi00NGI5LTk5N2QtYTkzMzNkMWM0NjBhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Anime Isekai" width="300">
-            <p>En especial Demon King Academy</p>
+        <section id="hobbies" class="seccion-contenedor fondo-seccion">
+            <h2 class="seccion-titulo">Mis Hobbies</h2>
+            <p class="seccion-descripcion">Cuando no estoy programando, disfruto de estas actividades.</p>
+            
+            <div class="hobbies-contenedor">
+                <div class="hobbie-tarjeta">
+                    <div class="hobbie-icono">🎬</div>
+                    <h3>Películas y Series</h3>
+                    <p>Disfruto del cine y las series, especialmente de ciencia ficción y fantasía.</p>
+                </div>
+                
+                <div class="hobbie-tarjeta">
+                    <div class="hobbie-icono">🌸</div>
+                    <h3>Anime Isekai</h3>
+                    <p>Mis favoritos son los animes donde los personajes son transportados a otros mundos.</p>
+                </div>
+                
+                <div class="hobbie-tarjeta">
+                    <div class="hobbie-icono">👨‍💻</div>
+                    <h3>Proyectos Personales</h3>
+                    <p>Programar en mi tiempo libre para aprender nuevas tecnologías.</p>
+                </div>
+                
+                <div class="hobbie-tarjeta">
+                    <div class="hobbie-icono">🎮</div>
+                    <h3>Videojuegos</h3>
+                    <p>Juego ocasionalmente, especialmente RPGs y juegos de estrategia.</p>
+                </div>
+            </div>
+            
+            <div class="hobbie-destacado">
+                <div class="hobbie-destacado-imagen">
+                    <img src="https://m.media-amazon.com/images/M/MV5BY2MzZGVhZTgtNWZlYi00NGI5LTk5N2QtYTkzMzNkMWM0NjBhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Anime Isekai" class="hobbie-img">
+                </div>
+                <div class="hobbie-destacado-texto">
+                    <h3>Anime Favorito: Demon King Academy</h3>
+                    <p>Me encantan los animes del género <strong>isekai</strong> donde los personajes son transportados a otros mundos. En especial Demon King Academy, que combina magia, acción y un protagonista poderoso pero carismático.</p>
+                    <p>Este género me inspira a crear mundos y personajes interesantes en mis proyectos de desarrollo.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- Sección Habilidades Técnicas -->
-        <section>
-            <h3>Habilidades Técnicas</h3>
-            <ul>
-                <li>HTML5 (¡Este portafolio es prueba!)</li>
-                <li>Java (POO, escritorio)</li>
-                <li>C++ (Algoritmos y estructuras)</li>
-                <li>JavaScript (Básico)</li>
-                <li>Git y Control de Versiones</li>
-            </ul>
-        </section>
-
-        <!-- Formulario de Contacto -->
-        <section id="contacto">
-            <h3>Contáctame</h3>
-            <form action="#" method="post">
-                <label for="nombre">Nombre completo:</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion-contenedor">
+            <h2 class="seccion-titulo">Contáctame</h2>
+            <p class="seccion-descripcion">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <div class="contacto-contenedor">
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <h3>🌐 Conéctate conmigo</h3>
+                        <p>Estoy disponible para colaborar en proyectos interesantes y oportunidades de aprendizaje.</p>
+                        <div class="redes-sociales">
+                            <a href="https://github.com/Rihay23" target="_blank" class="red-social">GitHub</a>
+                            <a href="#" class="red-social">LinkedIn</a>
+                            <a href="#" class="red-social">Gmail</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <h3>📧 Información de contacto</h3>
+                        <p><strong>Disponibilidad:</strong> Para proyectos freelance y colaboraciones</p>
+                        <p><strong>Horario de contacto:</strong> Lunes a viernes, 9:00 - 18:00 hrs</p>
+                    </div>
+                </div>
                 
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br><br>
-                
-                <label for="asunto">Asunto:</label><br>
-                <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?"><br><br>
-                
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
-                
-                <input type="submit" value="Enviar Mensaje">
-            </form>
+                <div class="contacto-formulario">
+                    <form action="#" method="post" class="form-contacto">
+                        <h3>Envíame un mensaje</h3>
+                        
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                        
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+                        
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        
+                        <button type="submit" class="form-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- Pie de página con enlaces -->
-    <footer>
-        <h3>Encuéntrame en:</h3>
-        <p>
-            <a href="https://github.com/Rihay23" target="_blank">GitHub</a> | 
-            <a href="#top">Volver arriba</a>
-        </p>
-        <p><strong>"La práctica constante es la clave para dominar la lógica de programación"</strong></p>
-        <p>© 2025 Yahir Estrada | Proyecto Final HTML</p>
-        <p><small>Este portafolio fue creado como proyecto final usando solo HTML semántico para DEV-F</small></p>
+    <!-- Pie de página -->
+    <footer class="footer-principal">
+        <div class="footer-contenido">
+            <div class="footer-logo">
+                <h3>Yahir Estrada</h3>
+                <p>Desarrollador de Software Multiplataforma</p>
+            </div>
+            
+            <div class="footer-enlaces">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-cita">
+                <p class="cita">"La práctica constante es la clave para dominar la lógica de programación"</p>
+                <p class="copyright">© 2025 Yahir Estrada | Proyecto Final Bootcamp Frontend</p>
+                <p class="disclaimer">Este portafolio fue creado como proyecto final usando HTML5 semántico y CSS3 para DEV-F</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Diseñado y desarrollado con ❤️ por Yahir Estrada</p>
+        </div>
     </footer>
+
+    <!-- Botón flotante -->
+    <a href="#contacto" class="boton-flotante">📩 Contáctame</a>
+    <a href="#top" class="boton-volver">↑</a>
 </body>
 </html>
