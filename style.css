@@ -592,3 +592,73 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(74, 0, 224, 0.2);
 }
+
+/* FOOTER */
+.footer-principal {
+    background-color: #1a237e;
+    color: white;
+    padding: 50px 20px 20px;
+}
+
+.footer-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-enlaces h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-enlaces ul {
+    list-style: none;
+}
+
+.footer-enlaces li {
+    margin-bottom: 8px;
+}
+
+.footer-enlaces a {
+    color: #bbdefb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-enlaces a:hover {
+    color: white;
+}
+
+.footer-cita .cita {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-cita .copyright {
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-cita .disclaimer {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    opacity: 0.8;
+}
